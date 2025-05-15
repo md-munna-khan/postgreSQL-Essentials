@@ -18,3 +18,9 @@
 | `CREATE DATABASE mydb;` | Create a new database           |
 | `\c mydb`               | Connect to a database           |
 | `\q`                    | Quit `psql`                     |
+##  7-3 User, Role and Privilege Management in POSTGRES.
+![alt text](image-3.png)
+## switch user1 
+![alt text](image-4.png)
+insert into table
+![alt text](image-5.png)
