@@ -74,7 +74,7 @@ These commands define the structure of a database.
 | DROP      | Deletes a database/table/index/view         |
 | TRUNCATE  | Removes all records from a table (faster than DELETE) |
 
-```sql
+ sql
 CREATE TABLE users (
   id INT PRIMARY KEY,
   name VARCHAR(100),
@@ -167,4 +167,51 @@ JOIN orders ON users.id = orders.user_id;
 SELECT users.name, orders.product
 FROM users
 LEFT JOIN orders ON users.id = orders.user_id;
-![alt text](image-10.png)
+![alt text](image-10.png) 
+
+
+
+
+##  7-7 Create, Update and Delete Database and Data Types in POSTGRES.mp4
+
+- 1 you go to the postgres ---- psql -U postgres -d postgres
+## create 
+- 2 = create database test
+## update
+- 3 = alter database test rename to ph
+## Delete
+- 4 drop database ph;
+
+## Data Types
+![alt text](image-11.png)
+![alt text](image-12.png)
+-  integer
+![alt text](image-13.png)
+- character mean string
+![alt text](image-14.png)
+- Date
+![alt text](image-15.png)
+- uuid
+![alt text](image-16.png)
+## 7-8 Creating a Table with Multiple Columns and Different Data Types
+![alt text](image-17.png)
+--CREATE  DATABASE ph;
+
+-- cratting table
+-- CREATE TABLE  person (
+-- person_id SERIAL,
+-- first_name VARCHAR(50),
+-- last_name VARCHAR(50),
+-- age INTEGER,
+-- isa_ctive BOOLEAN,
+-- dob Date
+-- 
+-- )
+
+-- alter TABLE person RENAME to "user"
+
+-- DROP  TABLE "user";
+
+## 7-9 Creating a Table with Multiple Columns and Column Constraints
+## columns constrain
+![alt text](image-18.png)
